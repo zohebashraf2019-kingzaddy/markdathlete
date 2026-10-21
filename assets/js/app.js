@@ -201,7 +201,7 @@
         <div class="chips">${a.disciplines.map(d => `<span class="chip"><b>${esc(d.sport)}</b>${esc(d.events)}</span>`).join("")}</div>
         <div class="socials">${a.instagram ? `<a class="social" href="https://instagram.com/${esc(a.instagram)}" target="_blank" rel="noopener"><small>Instagram</small><b>@${esc(a.instagram)}</b></a>` : ""}${a.strava ? `<a class="social" href="${esc(a.strava)}" target="_blank" rel="noopener"><small>Strava</small><b>Follow my training</b></a>` : ""}</div>
         <p class="bio">${esc(a.bio)}</p>
-        <div class="stat-row">${(a.stats || []).map(s => `<div class="stat"><b>${esc(s.v)}</b><span>${esc(s.l)}</span></div>`).join("")}</div>
+        ${(a.stats || []).length ? `<div class="stat-row">${a.stats.map(s => `<div class="stat"><b>${esc(s.v)}</b><span>${esc(s.l)}</span></div>`).join("")}</div>` : ""}
         ${r ? `<div class="taking">${speed(2)}<div><p class="eyebrow">Now taking sponsors</p><p class="display h-md">${esc(r.name)}</p></div><a class="btn btn-orange" href="#campaign">Sponsor me</a></div>` : ""}
         <h2 class="display h-sm" style="margin:44px 0 16px">Upcoming races</h2>
         <div class="races">${upcoming.length ? upcoming.map(x => `<div class="race-row"><div class="race-date"><span>${mon(x.date)}</span><b>${day(x.date)}</b></div><div><h4>${esc(x.name)}</h4><p>${esc(x.division)} · ${esc(x.city)} · Goal: ${esc(x.goal)}</p></div>${x.campaign && openSpots(x).length ? `<a class="btn btn-orange btn-sm" href="#campaign">${openSpots(x).length} spots open</a>` : '<span class="pill pill-soft">On the calendar</span>'}</div>`).join("") : '<p class="empty">No races posted yet.</p>'}</div>

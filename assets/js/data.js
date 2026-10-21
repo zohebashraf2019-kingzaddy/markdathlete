@@ -31,6 +31,49 @@ window.MA_SPOT_TYPES = {
 
 window.MA_ATHLETES = [
   {
+    id: "jenny-escalera",
+    name: "Jenny Escalera",
+    headline: "Marathoner | Reno to NYC | 2026 TCS New York City Marathon",
+    location: "Reno, NV",
+    founding: true,
+    memberSince: "October 2026",
+    photo: "assets/img/athletes/jenny-escalera.jpg",
+    cover: "assets/img/athletes/jenny-escalera-cover.jpg",
+    disciplines: [
+      { sport: "Running", events: "Marathon" }
+    ],
+    instagram: "jjennyy.e",
+    bio: `🏃‍♀️ From Reno to NYC! 🗽🏅
+Meet an incredible athlete from Reno, Nevada, who is getting ready to take on the 2026 TCS New York City Marathon!🏃‍♀️🔥
+For the past several months, she has been putting in the hard work, early morning runs, countless miles, and endless dedication to prepare for one of the world's most iconic marathons.
+What started as a goal is now becoming a reality. Every mile, every challenge, and every training session has brought her one step closer to the NYC finish line!
+Now she's ready to represent Reno, Nevada, on the streets of New York City! 🗽💪
+Let's show her some love and support as she takes on this incredible journey!
+Reno Strong. NYC Bound. 26.2 Miles. One Goal. 🏅❤️
+#NYCMarathon2026 #RenoToNYC #RoadToNYC #MarathonTraining #RenoNevada #RunYourRace #262Miles`,
+    stats: [],
+    accent: "#FF5A0A",
+    races: [
+      {
+        id: "nyc-marathon-2026",
+        name: "TCS New York City Marathon",
+        date: "2026-11-01",
+        city: "New York, NY",
+        division: "Women's Open",
+        goal: "Finish all 26.2 miles for Reno",
+        campaign: true,
+        // TODO: confirm these amounts with Jenny
+        spots: [
+          { type: "flights", price: 450, sponsoredBy: null },
+          { type: "hotel",   price: 600, sponsoredBy: null },
+          { type: "fuel",    price: 60,  sponsoredBy: null },
+          { type: "singlet", price: 150, sponsoredBy: null },
+          { type: "shout",   price: 50,  sponsoredBy: null }
+        ]
+      }
+    ]
+  },
+  {
     id: "jordan-reyes",
     name: "Jordan Reyes",
     headline: "Marathoner | Chasing a Boston Qualifier | Run Coach",
