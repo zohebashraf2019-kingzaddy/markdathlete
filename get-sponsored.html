@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get sponsored — MarkdAthlete</title>
+<meta name="description" content="Claim your free athlete page on MarkdAthlete and open your first sponsorship campaign.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="apply">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="speed" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <p class="eyebrow">Free for athletes</p>
+    <h1 class="display h-xl">Claim your <span class="hl">page.</span></h1>
+    <p class="lead">Tell us who you are and what you're racing next. We'll build your profile, set up your sponsor spots and send you the link to share.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:920px">
+    <div class="form-card">
+      <form id="apply-form">
+        <h2 class="display h-sm" style="margin-bottom:20px">About you</h2>
+        <div class="form-grid">
+          <div class="field"><label for="a-name">Full name</label><input class="input" id="a-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="a-email">Email</label><input class="input" id="a-email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="a-loc">City, State</label><input class="input" id="a-loc" name="location" placeholder="Reno, NV" required></div>
+          <div class="field"><label for="a-ig">Instagram</label><input class="input" id="a-ig" name="instagram" placeholder="@yourhandle"></div>
+          <div class="field full"><label for="a-head">Your headline</label><input class="input" id="a-head" name="headline" placeholder="Marathoner | Chasing a BQ | Run coach" maxlength="90"></div>
+          <div class="field full"><label for="a-sport">Sports and distances</label><input class="input" id="a-sport" name="sports" placeholder="Running: Half, Marathon · HYROX: Pro"></div>
+          <div class="field full"><label for="a-bio">Your story <small>(why should a sponsor back you?)</small></label><textarea class="input" id="a-bio" name="bio" required></textarea></div>
+          <div class="field full"><label for="a-prs">PRs or best results <small>(optional)</small></label><input class="input" id="a-prs" name="prs" placeholder="Marathon 3:04 · Half 1:26"></div>
+        </div>
+
+        <h2 class="display h-sm" style="margin:26px 0 20px">Your next race</h2>
+        <div class="form-grid">
+          <div class="field"><label for="a-race">Race name</label><input class="input" id="a-race" name="race" required></div>
+          <div class="field"><label for="a-date">Race date</label><input class="input" id="a-date" name="race_date" type="date" required></div>
+          <div class="field"><label for="a-rcity">Race city</label><input class="input" id="a-rcity" name="race_city"></div>
+          <div class="field"><label for="a-goal">Your goal</label><input class="input" id="a-goal" name="goal" placeholder="Sub 3:00"></div>
+          <div class="field full"><span class="label">Spots you want sponsored</span><div class="spot-picker" id="spot-picker"></div></div>
+          <div class="field full"><label for="a-costs">Costs and prices <small>(roughly is fine)</small></label><textarea class="input" id="a-costs" name="costs" placeholder="Entry $220 · Hotel $380 · Logo on singlet $150"></textarea></div>
+        </div>
+        <label class="check" style="margin:10px 0 22px"><input type="checkbox" required name="confirm" value="yes"><span>I'll post race-day proof for every sponsor, and I understand sponsors are refunded if I don't.</span></label>
+        <p class="help" style="margin-bottom:16px">After you submit, reply to our email with a profile photo and a race photo for your cover.</p>
+        <button class="btn btn-orange btn-block" type="submit">Claim my page</button>
+      </form>
+      <div class="success" id="apply-success"><div class="tick"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#0b0b0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></div><h3 class="display h-md">You're in.</h3><p class="help" style="font-size:17px">We got your application. Expect an email within 48 hours with your profile link.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
